@@ -1,0 +1,717 @@
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:  sans-serif;
+}
+body{
+  background-color: black;
+}
+.containar {
+
+  width: 100%;
+
+}
+.nav{
+  background:linear-gradient(to right,red,green,blue);
+  position:fixed;
+  width: 100%;
+  height:150px;
+  z-index: 1000;
+  top:0;
+}
+
+/* ------------------------------------------------ nav bar----------------------------- */
+.nav>h1{
+        color:white;
+        text-align: center;
+        padding: 20px;
+        font-family:  impact;
+        letter-spacing: 8px;
+        font-size: 50px;
+        font-style: italic ;
+}
+.nav>.icon{
+  display: none !important;
+}
+
+
+.nav>h2 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 4px;
+  font-style: italic ;
+        }
+
+.nav>ul {
+      display: flex;
+      list-style-type: none;
+      background-color: blac;
+      padding: 20px;
+      text-align:center;
+      position: absolute;
+      top:80px;
+      right: 30px;
+}
+.nav>ul>li {
+        margin-left: 30px;
+        
+}
+
+.nav>ul>li>a {
+        color:white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      /*------------------------------ nav bar icon style-------------------------------- */
+
+      input:checked~ul {
+        background-color: pink;
+        font-size: 30px;
+        left: 0;
+        transition: all 0.5s;
+    }
+    
+    input {
+        display: none;
+    }
+    
+    nav {
+        display: flex;
+        background-color: aqua;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 20px;
+      
+    }
+    
+    nav>ul {
+        display: flex;
+        list-style-type: none;
+        
+        color: red;
+        position: relative;
+        left: 100%;
+        
+    
+    }
+
+    nav>ul>li {
+      margin-left: 10px;
+      border-radius: 20px;
+  }
+  
+  h1 {
+      display: inline;
+      
+      
+  }
+  
+  nav>ul>li:hover {
+      background-color: pink;
+  }
+  
+  nav>h2:hover {
+      background-color: red;
+  }
+.videodiv{
+  
+margin-top:100px;
+ 
+}
+.videodiv>video {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;
+  /* opacity: 0.7; */
+ /* filter: brightness(90%); */
+  }
+.videodiv>h2 {
+ 
+  position: absolute;
+  top:200px;
+  
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  font-family: Impact;
+  letter-spacing:3px;
+  word-spacing: 8px;
+  width:100%;
+  text-align: center;
+  
+  
+}
+
+.imgdiv{
+  display: flex;
+  height: 700px;
+  padding: 20px;
+  gap:20px;
+
+}
+.imgdiv>.img1{
+  width:50%;
+  border-radius:10px;
+  box-shadow: 8px 8px 35px  white;
+  
+}
+
+.imgdiv>.img1>:hover{
+  transform: rotate(360deg);
+ transition-duration: 1s;
+}
+
+
+.imgdiv>.img1>img{
+  width:100%;
+  height:100%;
+
+}
+
+
+.imgdiv>.img2{
+  width:50%;
+  background-image: url('./images/spacex img1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 8px 8px 35px  white;
+}
+
+.imgdiv>.img2:hover{
+  transform: rotateY(360deg);
+  transition-duration: 4s;
+}
+
+
+h3 {
+  font-size: 30px;
+  color: white;
+}
+
+
+.paradiv {
+  display: flex;
+  
+  padding:20px;
+  gap:20px;
+
+}
+  
+.pdiv {
+    width:50%;
+    height: 100%;
+    p {
+    font-size: 27px;
+    font-style: italic;
+  }
+  color: white;
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 35px  white;
+
+  h1 {
+    color: red;
+    font-size: 50px;
+    text-shadow: 10px 30px 2px black;
+    font-size: 50px;
+
+    marquee{
+        color:red;
+        padding-bottom: 20px;
+      } 
+
+    }
+
+}
+.pdiv:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+  p:hover {
+    font-size: 14px;
+  }
+}
+
+
+.ldiv{
+    background-image: url('./images/img2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width:50%;
+    border-radius: 10px;
+
+    h2{
+        font-size: 50px;
+        text-shadow: 10px 10px 2px black;
+        margin-top: 13px;
+        marquee{
+          color:white;
+          padding-bottom: 20px;
+        } 
+  }
+
+
+}
+.ldiv:hover {
+  transform: rotatey(360deg);
+  transition-duration: 1s;
+  
+}
+
+
+.lastimg {
+  
+  display: flex;
+  gap: 13px;
+  padding: 20px;
+}
+.lastimg1 {
+  width: 47%;
+  margin-left: 20px;
+  
+}
+.lastimg1:hover{
+  transform: rotatey(360deg);
+  transition-duration: 1s;
+}
+.lastimg2 {
+  width: 47%;
+  margin-left: 20px;
+}
+.lastimg2:hover {
+  transform: rotateX(360deg);
+  transition-duration: 1s;
+
+}
+
+
+/* --------------------------------------------last 2 img---------------------------------------- */
+
+.lastimgsri {
+  
+  display: flex;
+  gap: 13px;
+  padding: 20px;
+}
+.lastimg3 {
+  width: 47%;
+  margin-left: 20px;
+  gap: 10px;
+  
+}
+.lastimg3:hover {
+  transform: rotate3d(10,10,10,360deg);
+  transition-duration: 3s;
+}
+.lastimg4 {
+  width: 47%;
+  margin-left: 20px;
+  
+}
+.lastimg4:hover {
+  transform: rotate3d(10,10,10,360deg);
+  transition-duration: 1s;
+}
+
+/* -----------------------------------------kalpana chawla img----------------------------------------- */
+
+.kalpana{
+  display: flex;
+}
+.kalpanaimg{
+  width: 47%;
+  margin-left: 20px;
+  gap:1px;
+  padding: 10px;
+}
+.kalpanagroup{
+  width: 47%;
+  margin-left: 20px;
+  gap:1px;
+  padding: 10px;
+}
+.kalpanaimg{
+  transition: all 1s;
+}
+.kalpanaimg:hover{
+  transform: matrix(-2,-0.6,0,1,0,0);
+}
+.kalpanagroup{
+  transition: all 1s;
+}
+.kalpanagroup:hover{
+  transform: matrix(-2,-0.6,0,1,0,0);
+}
+
+
+
+/* ------------------------------------------------tap--------------------------------------------- */
+
+ @media screen and (max-width:900px){
+  .nav{
+    background:linear-gradient(to right,blue,blue,white,green,green);
+    position:fixed;
+    width: 100%;
+    height:130px;
+    z-index: 1000;
+    top:0;
+  }
+  /* ------------------------------------------------ nav bar----------------------------- */
+   .nav>h1{
+          color:white;
+          text-align: center;
+          padding: 20px;
+          font-family:  impact;
+          letter-spacing: 6px;
+          font-size: 40px;
+          font-style: italic ;
+          
+  }
+  
+  
+  .nav>h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-style: italic ;
+          }
+  
+  .nav>ul {
+        display: flex;
+        list-style-type: none;
+        
+        padding: 5px;
+        text-align:center;
+        position: absolute;
+        top:60px;
+        right: 30px;
+  }
+  .nav>ul>li {
+          margin-left: 30px;
+          
+  }
+  
+  .nav>ul>li>a {
+          color:white;
+          font-size: 20px;
+          text-decoration: none;
+        }
+
+        .videodiv>h2 {
+ 
+          position: absolute;
+          top:200px;
+          
+          color: white;
+          font-size: 25px;
+          font-style: italic;
+          font-family: Impact;
+          letter-spacing:3px;
+          word-spacing: 8px;
+          width:100%;
+          text-align: center;
+          
+          
+        }
+        .imgdiv{
+      
+          height: 300px;
+          
+        }
+
+        .paradiv {
+          display: flex;
+          background-color: re;
+          padding:20px;
+          gap:20px;
+          height: 550px;
+        
+        }
+          
+        .pdiv {
+            width:50%;
+            height: 100%;
+            p {
+              font-size: 12px;
+              text-indent: 40px;
+            }
+          color: white;
+          background-color: blueviolet;
+          padding: 10px;
+          border-radius: 10px;
+          box-shadow: 8px 8px 35px  white;
+        
+          h1 {
+            color: red;
+            font-size: 50px;
+            text-shadow: 10px 30px 2px black;
+            font-size: 30px;
+        
+            marquee{
+                color:red;
+                padding-bottom: 20px;
+              } 
+        
+            }
+        
+        }
+        
+        
+        .ldiv{
+            background-image: url('./images/img2.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width:50%;
+            border-radius: 10px;
+        
+            h2{
+                font-size: 30px;
+                text-shadow: 10px 10px 2px red;
+                margin-top: 13px;
+                marquee{
+                  color:white
+                  ;
+                  padding-bottom: 20px;
+                } 
+          }
+          .imgdiv>.img2{
+            width:50%;
+            background-image: url('./images/spacex img1.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            box-shadow: 8px 8px 35px  white;
+          }
+          
+          
+          
+          h3 {
+            font-size: 20px;
+            color: green;
+          }
+  
+
+      } 
+    }
+
+    
+
+              /*----------------------------------------------------- mobile---------------------------------------------------- */
+ 
+
+ @media screen and (max-width:600px){ 
+  .nav{
+        background:linear-gradient(to right,blue,green,blue);
+        position:fixed;
+        width: 100%;
+        height:100px;
+        z-index: 1000;
+        top:0;
+      }
+      .nav>h1{
+        color:white;
+        text-align: center;
+        padding: 20px;
+        font-family:  impact;
+        letter-spacing: 8px;
+        font-size: 20px;
+        font-style: italic ;
+              }
+
+        .nav>.icon{
+          display: unset !important;
+        }
+        .videodiv>h2 {
+ 
+               position: absolute;
+                top:200px;
+                
+                color: white;
+                font-size: 20px;
+                font-style: italic;
+                font-family: Impact;
+                letter-spacing:3px;
+                word-spacing: 8px;
+                width:100%;
+                text-align: center;
+                
+                
+              }
+              .imgdiv{
+                /* display: flex; */
+                height:800px;
+                
+                padding: 20px;
+                gap:20px;
+              
+              }
+                    
+
+      .imgdiv>.img1>img{
+        width:100%;
+        height:50%;
+      
+      }
+      .imgdiv>.img1{
+        width:100%;
+        border-radius:10px;
+        box-shadow: 8px 8px 35px  white;
+      }
+      .nav>ul>li>a {
+        color:white;
+        font-size: 13px;
+        text-decoration: none;
+      }
+      
+      
+      .imgdiv>.img2{
+        flex-direction: column;
+        width:100%;
+        height: 50%;
+      
+        
+        background-image: url('./images/spacex img1.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        box-shadow: 8px 8px 35px  white;
+        h3 {
+          font-size: 20px;
+          color: white;
+        }
+        
+      }
+      .imgdiv{
+        /* display: flex; */
+        flex-direction: column;
+        
+        padding: 20px;
+        gap:20px;
+      
+      }
+      .paradiv {
+      
+        flex-direction: column;
+        
+        padding:20px;
+        gap:20px;
+        height: 900px;
+      
+      }
+      .ldiv{
+        background-image: url('./images/img2.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width:100%;
+        height: 50%;
+        border-radius: 10px;
+        
+        
+    
+        h2{
+            font-size: 25px;
+            text-shadow: 10px 10px 2px black;
+            margin-top: 13px;
+            marquee{
+              color:white;
+              padding-bottom: 20px;
+            } 
+      }
+    
+    
+    }
+    
+      .pdiv {
+        width:100%;
+        height: 50%;
+        p {
+        font-size: 11px;
+      }
+      color: white;
+      background-color: blueviolet;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 8px 8px 35px  white;
+    
+      h1 {
+        color: white;
+        font-size: 10px;
+        text-shadow: 10px 30px 2px black;
+        font-size: 50px;
+    
+        marquee{
+            color:white;
+            font-size: 25px;
+            padding-bottom: 20px;
+          } 
+    
+        }
+    
+    }
+    
+
+    .lastimg {
+  
+      flex-direction: column;
+      gap: 13px;
+      padding: 20px;
+    }
+    .lastimg1 {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .lastimg2 {
+      width: 100%;
+      margin-left:0px;
+    }
+
+    .lastimgsri {
+      
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      padding: 20px;
+    }
+    .lastimg3 {
+      width: 100%;
+      margin-left: 0;
+      gap: 10px;
+      
+    }
+
+    .lastimg4 {
+      width: 100%;
+      margin-left: 0;
+      gap: 10px;
+      
+    }
+    .kalpana{
+      flex-direction: column;
+    }
+    .kalpanaimg{
+      width: 100%;
+      height: 50%;
+      
+      
+      margin-left: 0;
+    }
+    .kalpanagroup{
+      width: 100%;
+      height:50%;
+      
+      
+      margin-left: 0;
+      
+      
+    }
+      
+ } 
+
+ 
